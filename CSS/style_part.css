@@ -1,0 +1,107 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #4a148c, #ff8f00);
+    color: #fff;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.navbar {
+    background: rgba(10, 10, 10, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.navbar-brand img {
+    width: 100px;
+    height: auto;
+}
+
+.navbar-nav .nav-item:hover .nav-link {
+    color: #ffeb3b !important;
+}
+
+/* Titolo principale */
+h1 {
+    font-size: 3rem;
+    color: #ffeb3b;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* Sottotitolo */
+h2 {
+    font-size: 2rem;
+    color: white;
+    margin-top: 20px;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+}
+
+p {
+    font-size: 1.2rem;
+    background: rgba(0, 0, 0, 0.85);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.6);
+    color: #f0f0f0;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+main {
+    background: rgba(0, 0, 0, 0.75);
+    padding: 50px 20px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.6);
+    margin-top: 20px;
+    text-align: center;
+}
+
+.table .partiteTable {
+    background-color: #212529;
+    color: #fff;
+    border: 1px solid #444;
+}
+
+.table thead th {
+    background:rgba(0, 0, 0, 0.5);
+    color: #ffeb3b;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+
+.btn-warning {
+    background-color: #ffeb3b;
+    color: #000;
+    border-radius: 30px;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+    box-shadow: 0px 4px 10px rgba(255, 235, 59, 0.5);
+}
+
+.btn-warning:hover {
+    background-color: #ffb300;
+    color: #fff;
+    box-shadow: 0px 4px 20px rgba(255, 193, 7, 0.8);
+    transform: scale(1.1);
+}
+
+header .container {
+    background: none !important; /* Rimuove eventuali sfondi indesiderati */
+    padding: 0 !important; /* Elimina eventuali spazi interni */
+    margin: 0 auto; /* Centra il contenuto */
+    border: none !important; /* Rimuove eventuali bordi */
+    box-shadow: none !important; /* Elimina ombreggiature */
+}
