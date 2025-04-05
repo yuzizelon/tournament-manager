@@ -3,12 +3,6 @@
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
-// Credenziali per il database
-$host = "sql204.infinityfree.com";
-$username = "if0_37692320";
-$password = "alignani2024";
-$database = "if0_37692320_torneo";
-
 // Connessione al database
 $conn = new mysqli($host, $username, $password, $database);
 if ($conn->connect_error) {
