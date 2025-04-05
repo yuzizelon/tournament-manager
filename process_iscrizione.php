@@ -61,7 +61,7 @@ $stmt->bind_param("ss", $idStudente1, $emailStudente1);
 $stmt->execute();
 $result = $stmt->get_result();
 if ($result->num_rows > 0) {
-    die("<script>alert('Errore: ID o email dello Partecipante 2 già registrati.'); window.location.href = 'iscrizione.php';</script>");
+    die("<script>alert('Errore: ID o email del Partecipante 2 già registrati.'); window.location.href = 'iscrizione.php';</script>");
 }
 
 // Controllo per Studente 2
@@ -69,13 +69,13 @@ $stmt->bind_param("ss", $idStudente2, $emailStudente2);
 $stmt->execute();
 $result = $stmt->get_result();
 if ($result->num_rows > 0) {
-    die("<script>alert('Errore: ID o email dello studente 3 già registrati.'); window.location.href = 'iscrizione.php';</script>");
+    die("<script>alert('Errore: ID o email del Partecipante 3 già registrati.'); window.location.href = 'iscrizione.php';</script>");
 }
 
-// Inserimento squadra
-$sqlSquadra = "INSERT INTO Squadra (nome, caposquadra, Confermato) VALUES (?, ?, 0)";
+// Inserimento squadra con giocatore_2 e giocatore_3
+$sqlSquadra = "INSERT INTO Squadra (nome, caposquadra, giocatore_2, giocatore_3, Confermato) VALUES (?, ?, ?, ?, 0)";
 $stmt = $conn->prepare($sqlSquadra);
-$stmt->bind_param("ss", $nomeSquadra, $idCapo);
+$stmt->bind_param("ssss", $nomeSquadra, $idCapo, $idStudente1, $idStudente2);
 if (!$stmt->execute()) {
     die("<script>alert('Errore nel salvataggio della squadra: " . $conn->error . "'); window.location.href = 'iscrizione.php';</script>");
 }
