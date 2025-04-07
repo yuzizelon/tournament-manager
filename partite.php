@@ -48,10 +48,10 @@
                 <tbody id="partiteTable">
                     <?php
                         // Connessione al database
-                        $host = 'sql204.infinityfree.com';
-                        $dbname = 'if0_37692320_torneo';
-                        $username = 'if0_37692320';
-                        $password = 'alignani2024';
+                        $host = '';
+                        $dbname = '';
+                        $username = '';
+                        $password = '';
 
                         try {
                             $conn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
