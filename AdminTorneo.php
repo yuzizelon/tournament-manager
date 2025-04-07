@@ -9,10 +9,10 @@ ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
 // Configurazione database
-$host = 'sql204.infinityfree.com';
-$dbname = 'if0_37692320_torneo';
-$username = 'if0_37692320';
-$password = 'alignani2024';
+$host = '';
+$dbname = '';
+$username = '';
+$password = '';
 
 try {
     $conn = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);
