@@ -40,10 +40,10 @@
                 <tbody>
                     <?php
                     // Credenziali per la connessione al database
-                    $servername = "sql204.infinityfree.com";
-                    $username = "if0_37692320";
-                    $password = "alignani2024";
-                    $dbname = "if0_37692320_torneo";
+                    $servername = "m";
+                    $username = "";
+                    $password = "";
+                    $dbname = "";
 
                     // Connessione al database
                     $conn = new mysqli($servername, $username, $password, $dbname);
