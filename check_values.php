@@ -4,10 +4,10 @@ ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
 // Configurazione della connessione al database
-$host = 'sql204.infinityfree.com';
-$dbname = 'if0_37692320_torneo';
-$username = 'if0_37692320';
-$password = 'alignani2024';
+$host = '';
+$dbname = '';
+$username = '';
+$password = '';
 
 try {
     // Connessione unica al database
